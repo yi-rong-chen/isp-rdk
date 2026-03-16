@@ -1,0 +1,38 @@
+.connection-status {
+  margin-bottom: 16px;
+
+  .ant-alert {
+    &.ant-alert-banner {
+      border-radius: 0;
+      margin-bottom: 0;
+    }
+
+    &.ant-alert-warning {
+      background: rgba(250, 173, 20, 0.1);
+      border: 1px solid rgba(250, 173, 20, 0.3);
+
+      .ant-alert-message {
+        color: #faad14;
+        font-weight: 500;
+      }
+
+      .ant-alert-description {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 12px;
+        margin-top: 4px;
+      }
+
+      .ant-alert-icon {
+        color: #faad14;
+      }
+
+      .ant-alert-close-icon {
+        color: rgba(255, 255, 255, 0.6);
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

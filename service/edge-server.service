@@ -1,0 +1,23 @@
+[Unit]
+Description=edge_server
+After=signal-server.service
+Wants=signal-server.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/ccai/edge/manager
+ExecStart=/usr/bin/python3 /home/ccai/edge/manager/manager.py
+User=ccai
+RemainAfterExit=yes
+Environment="PATH=/opt/node/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+Environment=MVCAM_SDK_PATH=/opt/MVS
+Environment=MVCAM_COMMON_RUNENV=/opt/MVS/lib/aarch64
+Environment=LD_LIBRARY_PATH=/opt/MVS/lib/aarch64:/usr/local/ffmpeg/lib:/usr/local/cuda/lib64:/usr/lib/aarch64-linux-gnu:$LD_LIBRARY_PATH
+Environment=CUDA_CACHE_PATH=/home/ccai/.cache/cuda
+Environment=XDG_CACHE_HOME=/home/ccai/.cache
+Environment="XDG_RUNTIME_DIR=/run/user/1000"
+Environment="PULSE_SERVER=unix:/run/user/1000/pulse/native"
+Environment="DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus"
+
+[Install]
+WantedBy=multi-user.target

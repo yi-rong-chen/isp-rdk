@@ -1,0 +1,16 @@
+{
+    "BOM_DICT": "{}",
+    "PY_CODE": "\"\"\"\n\ndef update_status(labels, args):\n    return {\n        'status': None,\n        'alert_pre_status': None,\n        'process_status': None,\n        'change_flag': None,\n        'alter_status': None\n    }\n\n\"\"\"",
+    "DEV_FLAG": "True",
+    "VIDEO_CONFIG": "{\n  \"segment_seconds\": 60,\n  \"slice_seconds\": 30,\n  \"bitrate_coefficient\": 0.5\n}",
+    "CAMERA_CONFIG": "{}",
+    "PROCESS_STATUS": "{}",
+    "ISP_CLOUD_CONFIG": "{\n  \"create_task_path\": \"https://api.caochuan.cc/isp_server/api/isp/task/edge_create\",\n  \"task_list_query_path\": \"https://api.caochuan.cc/isp_server/api/isp/task/edge_task_list\",\n  \"upload_record_cloud_path\": \"http://52.83.251.142:7086/api/isp/video/upload_product_info_and_video\",\n  \"upload_log_cloud_path\": \"https://api.caochuan.cc/isp_server/api/isp/record/create\",\n  \"upload_failed_video_path\": \"https://api.caochuan.cc/isp_server/api/isp/video/ng_video_split_task\",\n  \"alarm_path\": \"https://api.caochuan.cc/isp_server/api/isp/common/alarm/feishu\",\n  \"cur_task_id\": \"0\"\n}",
+    "CASSDOR_AUTH_CONFIG": "{\n  \"org_name\": \"\",\n  \"app_name\": \"isp\",\n  \"user_name\": \"_admin\",\n  \"password\": \"Changeme_123\"\n}",
+    "TRICOLOUR_LIGHT_FLAG": "False",
+    "TRICOLOUR_LIGHT_STATUS": "{\n  \"running_status\": {\n    \"idle\": \"yellow\",\n    \"running\": \"yellow\",\n    \"ok\": \"green\",\n    \"ng\": \"red,buzzer\"\n  },\n  \"ng_time\": 3\n}",
+    "FINISH_HOOK_CODE": "\"\"\"\n\ndef finish_hook_code(task_data):\n    return None\n\n\"\"\"",
+    "LABELS_CONFS": "{}",
+    "WORKSTATION_NAME": "\"\"",
+    "UPLOAD_SUCCESS": "False"
+}

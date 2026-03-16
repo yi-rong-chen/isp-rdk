@@ -1,0 +1,42 @@
+{
+  "name": "edge-console",
+  "version": "1.0.0",
+  "description": "Edge Console - 智能检测控制台",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@emotion/react": "^11.14.0",
+    "antd": "4.24.15",
+    "classnames": "^2.5.1",
+    "i18next": "^23.10.1",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.1.0",
+    "socket.io-client": "^4.8.1",
+    "umi": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.0",
+    "@types/react": "^18.2.57",
+    "@types/react-dom": "^18.2.19",
+    "@umijs/plugins": "^4.1.2",
+    "esbuild": "^0.25.10",
+    "eslint": "^8.0.0",
+    "prettier": "^2.2.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

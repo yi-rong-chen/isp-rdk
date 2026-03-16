@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=CAMERA
+Comment=CAMERA
+Exec=env LD_LIBRARY_PATH=/opt/MVS/lib/aarch64:/opt/MVS/bin:LD_LIBRARY_PATH  /opt/MVS/bin/MVS
+Icon=/home/customer/Pictures/CAMERA.png
+Terminal=false
+Type=Application
+Categories=Utility;Development;
+StartupNotify=true

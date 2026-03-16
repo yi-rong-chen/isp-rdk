@@ -1,0 +1,18 @@
+# .editorconfig
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+indent_style = space
+indent_size = 2
+
+[*.sh]
+end_of_line = lf
+
+[*.py]
+end_of_line = lf
+
+[*.bat]
+end_of_line = crlf

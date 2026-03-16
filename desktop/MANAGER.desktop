@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=MANAGER
+Comment=MANAGER
+Exec=python3  /home/customer/tools/control_ui.py
+Icon=/home/customer/Pictures/MANAGER.png
+Terminal=false
+Type=Application
+Categories=Utility;Development;
+StartupNotify=true

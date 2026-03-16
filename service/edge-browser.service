@@ -1,0 +1,19 @@
+[Unit]
+Description=Edge Browser Service
+After=network.target edge-server.service
+Wants=network.target edge-server.service
+
+[Service]
+Type=oneshot
+User=customer
+Group=customer
+ExecStartPre=/bin/sleep 15
+ExecStart=/bin/bash /home/customer/edge-browser.sh
+RemainAfterExit=yes
+StandardOutput=journal
+StandardError=journal
+Environment=DISPLAY=:0.0
+Environment=XAUTHORITY=/home/customer/.Xauthority
+
+[Install]
+WantedBy=multi-user.target
